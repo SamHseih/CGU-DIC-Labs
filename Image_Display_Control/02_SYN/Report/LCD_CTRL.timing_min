@@ -1,0 +1,189 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 5
+Design : LCD_CTRL
+Version: W-2024.09-SP2
+Date   : Wed Feb 11 03:19:20 2026
+****************************************
+
+Operating Conditions: fast   Library: fast
+Wire Load Model Mode: top
+
+  Startpoint: IROM_rd_reg
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: IROM_rd_reg
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  IROM_rd_reg/CK (DFFSX1)                  0.00       0.50 r
+  IROM_rd_reg/QN (DFFSX1)                  0.44       0.94 r
+  U8654/Y (NOR2X1)                         0.13       1.06 f
+  IROM_rd_reg/D (DFFSX1)                   0.00       1.06 f
+  data arrival time                                   1.06
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  IROM_rd_reg/CK (DFFSX1)                  0.00       0.60 r
+  library hold time                       -0.02       0.58
+  data required time                                  0.58
+  -----------------------------------------------------------
+  data required time                                  0.58
+  data arrival time                                  -1.06
+  -----------------------------------------------------------
+  slack (MET)                                         0.49
+
+
+  Startpoint: count_reg[5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: IRAM_A_reg[5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  count_reg[5]/CK (DFFRX4)                 0.00       0.50 r
+  count_reg[5]/QN (DFFRX4)                 0.44       0.94 r
+  U8644/Y (NOR2X1)                         0.13       1.07 f
+  IRAM_A_reg[5]/D (DFFRX1)                 0.00       1.07 f
+  data arrival time                                   1.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  IRAM_A_reg[5]/CK (DFFRX1)                0.00       0.60 r
+  library hold time                       -0.04       0.56
+  data required time                                  0.56
+  -----------------------------------------------------------
+  data required time                                  0.56
+  data arrival time                                  -1.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.51
+
+
+  Startpoint: image_buffer_reg[18][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: image_buffer_reg[18][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  image_buffer_reg[18][5]/CK (DFFQX4)      0.00       0.50 r
+  image_buffer_reg[18][5]/Q (DFFQX4)       0.37       0.87 r
+  U5983/Y (AOI222X2)                       0.13       1.00 f
+  U7998/Y (CLKINVX1)                       0.12       1.12 r
+  image_buffer_reg[18][5]/D (DFFQX4)       0.00       1.12 r
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  image_buffer_reg[18][5]/CK (DFFQX4)      0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.59
+
+
+  Startpoint: image_buffer_reg[19][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: image_buffer_reg[19][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  image_buffer_reg[19][5]/CK (DFFQX4)      0.00       0.50 r
+  image_buffer_reg[19][5]/Q (DFFQX4)       0.37       0.87 r
+  U5959/Y (AOI222X2)                       0.13       1.00 f
+  U7996/Y (CLKINVX1)                       0.12       1.12 r
+  image_buffer_reg[19][5]/D (DFFQX4)       0.00       1.12 r
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  image_buffer_reg[19][5]/CK (DFFQX4)      0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.60
+
+
+  Startpoint: image_buffer_reg[10][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: image_buffer_reg[10][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  image_buffer_reg[10][2]/CK (DFFQX4)      0.00       0.50 r
+  image_buffer_reg[10][2]/Q (DFFQX4)       0.36       0.86 r
+  U4963/Y (AOI222X1)                       0.17       1.03 f
+  U8329/Y (CLKINVX1)                       0.14       1.17 r
+  image_buffer_reg[10][2]/D (DFFQX4)       0.00       1.17 r
+  data arrival time                                   1.17
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  image_buffer_reg[10][2]/CK (DFFQX4)      0.00       0.60 r
+  library hold time                       -0.08       0.52
+  data required time                                  0.52
+  -----------------------------------------------------------
+  data required time                                  0.52
+  data arrival time                                  -1.17
+  -----------------------------------------------------------
+  slack (MET)                                         0.65
+
+
+1

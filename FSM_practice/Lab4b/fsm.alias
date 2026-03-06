@@ -1,0 +1,4 @@
+IDLE   2'b00
+START   2'b01
+WRITEAddr   2'b10
+WRITEData  2'b11

@@ -1,0 +1,3 @@
+IDLE   2'b00
+READ   2'b01
+WRITE  2'b10

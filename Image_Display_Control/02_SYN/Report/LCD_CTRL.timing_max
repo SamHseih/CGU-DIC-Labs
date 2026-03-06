@@ -1,0 +1,245 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 5
+Design : LCD_CTRL
+Version: W-2024.09-SP2
+Date   : Wed Feb 11 03:19:20 2026
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: cmd[3] (input port clocked by clk)
+  Endpoint: image_buffer_reg[35][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  cmd[3] (in)                              0.11       5.61 f
+  U4623/Y (INVX3)                          0.11       5.71 r
+  U4568/Y (NOR2X2)                         0.14       5.85 f
+  U5416/Y (NOR3BXL)                        0.31       6.16 f
+  U6489/Y (BUFX4)                          0.20       6.36 f
+  U7425/Y (CLKBUFX3)                       0.22       6.58 f
+  U6734/Y (CLKBUFX3)                       0.57       7.15 f
+  U6296/Y (AO22XL)                         0.54       7.69 f
+  U4521/Y (AOI221XL)                       0.52       8.21 r
+  U9820/Y (NAND2X1)                        0.23       8.44 f
+  U5366/Y (AO22X2)                         0.61       9.05 f
+  U3786/Y (INVX8)                          0.27       9.32 r
+  U4271/Y (NOR2BX4)                        0.22       9.54 f
+  U5475/Y (AOI222X1)                       0.39       9.93 r
+  U7674/Y (CLKINVX1)                       0.19      10.12 f
+  image_buffer_reg[35][3]/D (DFFQX1)       0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  image_buffer_reg[35][3]/CK (DFFQX1)      0.00      10.40 r
+  library setup time                      -0.28      10.12
+  data required time                                 10.12
+  -----------------------------------------------------------
+  data required time                                 10.12
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cmd[3] (input port clocked by clk)
+  Endpoint: image_buffer_reg[30][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  cmd[3] (in)                              0.11       5.61 f
+  U4623/Y (INVX3)                          0.11       5.71 r
+  U4568/Y (NOR2X2)                         0.14       5.85 f
+  U4611/Y (AND2X4)                         0.18       6.03 f
+  U5226/Y (NOR2BX2)                        0.23       6.26 f
+  U7435/Y (CLKBUFX3)                       0.24       6.50 f
+  U6751/Y (CLKBUFX3)                       0.54       7.03 f
+  U9833/Y (AO22X1)                         0.51       7.54 f
+  U9834/Y (AOI221XL)                       0.50       8.05 r
+  U9835/Y (NAND2X1)                        0.21       8.26 f
+  U7426/Y (AO22X2)                         0.66       8.92 f
+  U5607/Y (CLKINVX12)                      0.17       9.09 r
+  U5606/Y (NOR2BX4)                        0.20       9.28 f
+  U7656/Y (AOI222XL)                       0.63       9.92 r
+  U5655/Y (INVX1)                          0.19      10.11 f
+  image_buffer_reg[30][3]/D (DFFQX1)       0.00      10.11 f
+  data arrival time                                  10.11
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  image_buffer_reg[30][3]/CK (DFFQX1)      0.00      10.40 r
+  library setup time                      -0.29      10.11
+  data required time                                 10.11
+  -----------------------------------------------------------
+  data required time                                 10.11
+  data arrival time                                 -10.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cmd[3] (input port clocked by clk)
+  Endpoint: image_buffer_reg[29][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  cmd[3] (in)                              0.11       5.61 f
+  U4623/Y (INVX3)                          0.11       5.71 r
+  U4568/Y (NOR2X2)                         0.14       5.85 f
+  U5416/Y (NOR3BXL)                        0.31       6.16 f
+  U6489/Y (BUFX4)                          0.20       6.36 f
+  U7425/Y (CLKBUFX3)                       0.22       6.58 f
+  U6734/Y (CLKBUFX3)                       0.57       7.15 f
+  U9836/Y (AO22X1)                         0.53       7.67 f
+  U9837/Y (AOI221XL)                       0.51       8.19 r
+  U9840/Y (NAND2X1)                        0.23       8.42 f
+  U4466/Y (AO22X2)                         0.59       9.01 f
+  U3771/Y (CLKINVX6)                       0.30       9.31 r
+  U4265/Y (NOR2BX4)                        0.23       9.54 f
+  U4828/Y (AOI222X1)                       0.39       9.93 r
+  U8072/Y (CLKINVX1)                       0.19      10.12 f
+  image_buffer_reg[29][2]/D (DFFQX1)       0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  image_buffer_reg[29][2]/CK (DFFQX1)      0.00      10.40 r
+  library setup time                      -0.28      10.12
+  data required time                                 10.12
+  -----------------------------------------------------------
+  data required time                                 10.12
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cmd[3] (input port clocked by clk)
+  Endpoint: image_buffer_reg[29][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  cmd[3] (in)                              0.11       5.61 f
+  U4623/Y (INVX3)                          0.11       5.71 r
+  U4568/Y (NOR2X2)                         0.14       5.85 f
+  U5416/Y (NOR3BXL)                        0.31       6.16 f
+  U6489/Y (BUFX4)                          0.20       6.36 f
+  U7425/Y (CLKBUFX3)                       0.22       6.58 f
+  U6734/Y (CLKBUFX3)                       0.57       7.15 f
+  U9836/Y (AO22X1)                         0.53       7.67 f
+  U9837/Y (AOI221XL)                       0.51       8.19 r
+  U9840/Y (NAND2X1)                        0.23       8.42 f
+  U4466/Y (AO22X2)                         0.59       9.01 f
+  U3771/Y (CLKINVX6)                       0.30       9.31 r
+  U4265/Y (NOR2BX4)                        0.23       9.54 f
+  U4876/Y (AOI222X1)                       0.39       9.93 r
+  U8074/Y (CLKINVX1)                       0.19      10.12 f
+  image_buffer_reg[29][4]/D (DFFQX1)       0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  image_buffer_reg[29][4]/CK (DFFQX1)      0.00      10.40 r
+  library setup time                      -0.28      10.12
+  data required time                                 10.12
+  -----------------------------------------------------------
+  data required time                                 10.12
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+  Startpoint: cmd[3] (input port clocked by clk)
+  Endpoint: image_buffer_reg[29][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LCD_CTRL           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  input external delay                     5.00       5.50 f
+  cmd[3] (in)                              0.11       5.61 f
+  U4623/Y (INVX3)                          0.11       5.71 r
+  U4568/Y (NOR2X2)                         0.14       5.85 f
+  U5416/Y (NOR3BXL)                        0.31       6.16 f
+  U6489/Y (BUFX4)                          0.20       6.36 f
+  U7425/Y (CLKBUFX3)                       0.22       6.58 f
+  U6734/Y (CLKBUFX3)                       0.57       7.15 f
+  U9836/Y (AO22X1)                         0.53       7.67 f
+  U9837/Y (AOI221XL)                       0.51       8.19 r
+  U9840/Y (NAND2X1)                        0.23       8.42 f
+  U4466/Y (AO22X2)                         0.59       9.01 f
+  U3771/Y (CLKINVX6)                       0.30       9.31 r
+  U4265/Y (NOR2BX4)                        0.23       9.54 f
+  U4794/Y (AOI222X1)                       0.39       9.93 r
+  U8070/Y (CLKINVX1)                       0.19      10.12 f
+  image_buffer_reg[29][1]/D (DFFQX1)       0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock clk (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  image_buffer_reg[29][1]/CK (DFFQX1)      0.00      10.40 r
+  library setup time                      -0.28      10.12
+  data required time                                 10.12
+  -----------------------------------------------------------
+  data required time                                 10.12
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1
